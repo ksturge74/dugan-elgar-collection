@@ -22,7 +22,7 @@ These items come from personal family collections and local public art installat
 
 ## Metadata and Technical Notes
 
-This collection utilizes the Dublin Core Metadata Element Set (DCMES) and the CollectionBuilder-GH Data Schema. It also relies on the following controlled vocabularies and standards: RightsStatements.org, Library of Congress / AAT-Style Topical & Genre Terms, DCMI Type Vocabulary & IANA Media Types, ISO 8601 Date Standard, ISO 639 Language Codes, and WGS 84 Geographic Coordinates. For more information, please visit this collection’s [Metadata Application Profile]({{ '/docs/dugan-elgar-map.pdf' | relative_url }}).
+This collection utilizes the Dublin Core Metadata Element Set (DCMES) and the CollectionBuilder-GH Data Schema. It also relies on the following controlled vocabularies and standards: RightsStatements.org, Library of Congress / AAT-Style Topical & Genre Terms, DCMI Type Vocabulary & IANA Media Types, ISO 8601 Date Standard, ISO 639 Language Codes, and WGS 84 Geographic Coordinates. For more information, please visit this collection’s [Metadata Application Profile](https://github.com/ksturge74/dugan-elgar-collection/blob/main/docs/dugan-elgar-map.pdf)
 
 ## Rights & Citations
 
