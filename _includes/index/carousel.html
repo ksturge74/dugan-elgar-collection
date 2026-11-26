@@ -18,7 +18,9 @@
     
 {%- endcomment -%}
 
-{%- assign image-items = site.data[site.metadata ] | where_exp: 'item', 'item.objectid' | where_exp: "item","item.format contains 'image' or item.format == 'compound_object'" -%}
+{%- assign image-only = site.data[site.metadata] | where_exp: 'item', 'item.objectid' | where_exp: 'item', "item.format contains 'image'" -%}
+{%- assign compound-only = site.data[site.metadata] | where_exp: 'item', 'item.objectid' | where_exp: 'item', "item.format == 'compound_object'" -%}
+{%- assign image-items = image-only | concat: compound-only -%}
 {%- assign youtube-items = site.data[site.metadata ] | where_exp: 'item', 'item.objectid' | where_exp: "item","item.youtubeid" -%}
 {%- if youtube-items -%}{%- assign carousel-items = image-items | concat: youtube-items -%}{%- else -%}{%- assign carousel-items = image-items -%}{% endif %}
 
