@@ -24,6 +24,10 @@ These items come from personal family collections and local public art installat
 
 This collection utilizes the Dublin Core Metadata Element Set (DCMES) and the CollectionBuilder-GH Data Schema. It also relies on the following controlled vocabularies and standards: RightsStatements.org, Library of Congress / AAT-Style Topical & Genre Terms, DCMI Type Vocabulary & IANA Media Types, ISO 8601 Date Standard, ISO 639 Language Codes, and WGS 84 Geographic Coordinates. For more information, please visit this collection’s [Metadata Application Profile](https://github.com/ksturge74/dugan-elgar-collection/blob/main/docs/dugan-elgar-map.pdf)
 
+### Digitization and File Management
+
+Physical items in this collection were digitized according to source format and setting. Flat two-dimensional materials from the family archive—including photographs, V-mail correspondence, handwritten notes, and newspaper clippings—were captured on an Epson flatbed scanner, with uncompressed TIFF files retained offline as preservation masters and JPEG (`image/jpeg`) derivatives generated for web access. Three-dimensional limestone sculptures and outdoor public monuments in Bloomington were photographed on site using an iPhone camera across multiple angles to document front, back, and detail views. Existing digital images (such as pages from the 25th Naval Construction Battalion cruise book and the *William Henry Harrison* monument in Vincennes) were harvested from public online repositories and documented in the item metadata. All access files follow a standardized, non-proprietary naming convention (`dugan_001` through `dugan_050`).
+
 ## Rights & Citations
 
 ### Rights Statement
