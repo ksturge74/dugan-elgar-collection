@@ -117,7 +117,7 @@
         var thumbSrc;
         if (feature.properties.youtube) {
             thumbSrc = 'https://img.youtube.com/vi/' +  feature.properties.youtube + '/default.jpg';
-        } else if (feature.properties.format && feature.properties.format.includes("image")) {
+        } else if (feature.properties.format && (feature.properties.format.includes("image") || feature.properties.format.includes("compound"))) {
             thumbSrc = feature.properties.filename;
         } else if (feature.properties.format && feature.properties.format.includes("audio")) {
             thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-audio }}.svg';
