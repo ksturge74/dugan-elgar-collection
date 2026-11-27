@@ -19,8 +19,9 @@
     },
     "events": [
       {% for item in items %}{% if item.date %}{
+        {%- assign first_child = site.data[site.metadata] | where: 'parentid', item.objectid | first -%}
         "media": {
-          "url": "{% if item.youtubeid %}{{ 'https://www.youtube.com/watch?v=' | append: item.youtubeid }}{% elsif item.vimeoid %}{{ 'https://vimeo.com/' | append: item.vimeoid }}{% elsif item.filename contains 'http' %}{{ item.filename }}{% else %}{{ item.filename | prepend: '/objects/' | absolute_url }}{% endif %}",
+          "url": "{% if item.youtubeid %}{{ 'https://www.youtube.com/watch?v=' | append: item.youtubeid }}{% elsif item.vimeoid %}{{ 'https://vimeo.com/' | append: item.vimeoid }}{% elsif item.filename contains 'http' %}{{ item.filename }}{% elsif item.filename and item.filename != '' %}{{ item.filename | prepend: '/objects/' | absolute_url }}{% elsif first_child and first_child.filename != '' %}{{ first_child.filename | prepend: '/objects/' | absolute_url }}{% endif %}",
           "caption": {{ item.title | jsonify }},
           "link": "{{ '/item.html' | absolute_url | append: '?id=' | append: item.objectid }}",
           "credit": "{{ site.title }}"
